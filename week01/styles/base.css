@@ -90,13 +90,15 @@ main {
     padding: 0.5rem;
     border-radius: 5px;
 }
-
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    width: 200px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 8px; /* Slightly rounded corners, similar to example */
+    margin: 0 auto 1rem; /* Centers the image in the container and adds bottom margin */
+    display: block; /* Centers the image */
 }
+
 
 .card p, .card ul {
     margin-bottom: 1rem;
