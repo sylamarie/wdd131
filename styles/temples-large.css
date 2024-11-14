@@ -1,0 +1,36 @@
+/* Larger screen (desktop/tablet) styles using a media query */
+@media only screen and (min-width: 48rem) { /* 48rem = 768px */
+    header h1 {
+        font-size: 3em; /* Larger header text for bigger screens */
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    nav ul li a {
+        font-size: 1.5em; /* Increase font size for links */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    .rocorn {
+        max-width: 100%; /* Ensure images are responsive */
+    }
+}
+
+@media only screen and (min-width: 64rem) { /* 64rem = 1024px */
+    nav ul li {
+        margin-right: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.8em; /* Further increase font size for large screens */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for larger desktops */
+    }
+}
