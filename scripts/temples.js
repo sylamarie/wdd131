@@ -1,5 +1,3 @@
-// temples.js
-
 // Update the current year in the footer
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 
@@ -7,13 +5,16 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
 
 // Hamburger menu functionality for mobile view
-const hamburger = document.getElementById('hamburger'); // The hamburger button
-const navMenu = document.querySelector('nav ul'); // The navigation menu
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-    // Toggle the visibility of the menu items
+    hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-
-    // Change the hamburger icon to an 'X' when the menu is open
-    hamburger.classList.toggle('open');
 });
+
+// Close the hamburger menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}));
