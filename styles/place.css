@@ -6,7 +6,9 @@
 }
 
 body {
-    font-family: var('Arial', sans-serif);
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -14,8 +16,8 @@ body {
 header, footer {
     text-align: center;
     padding: 1em;
-    color: #fff;
-    background-color: #e63232;
+    color: var(--text-color);
+    background-color: var(--accent-color);
 }
 
 main {
