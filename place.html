@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Syla Marie Cumuyog, This is a Place page">
+    <meta name="author" content="Syla Marie Cumuyog">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 600px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <picture>
+                <source srcset="images/japan-large.WebP" media="(min-width: 600px)">
+                <img src="images/japan-small.WebP" alt="View of a Japanese building and landscape">
+            </picture>
+
+            <section class="data">
+                <h2 class="data1">Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 377,975 sq km</li>
+                    <li><strong>Population:</strong> 126 million (2024 estimate)</li>
+                    <li><strong>Capital:</strong> Tokyo</li>
+                    <li><strong>Languages:</strong> Japanese</li>
+                    <li><strong>Currency:</strong> Japanese Yen</li>
+                    <li><strong>Time Zone:</strong> UTC+9</li>
+                    <li><strong>Calling Code:</strong> +81</li>
+                    <li><strong>Internet TLD:</strong> .jp</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h2 class="weather2">Weather<img class="weatherp" src="images/weather.svg" alt="sun and cloud"></h2>
+                
+                <ul>
+                    <li><strong>Temperature:</strong> 10°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 5 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Syla Marie Cumuyog | Philippines</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Larger View Styles */
+@media (min-width: 600px) {
+body {
+    background-color: #fff; /* White background for wider view */
+    color: #000;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    padding: 2em;
+    background-color: #e63232; /* Madagascar red */
+    color: var(--text-color);
+}
+
+/* Hero Image */
+picture img {
+    width: 100%; /* Smaller image width for larger screens */
+    display: block;
+    margin: 0 auto;
+    max-width: 100;
+}
+
+/* Weather Section */
+.weather-icon {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+    
+/* Section Data (Upper Left) */
+.data1 {
+    background-color: rgba(230, 70, 70, 0.7);
+    padding: 2rem;
+    color: #fff;
+    position: absolute;
+    top: -15px; /* Distance from the top of the page */
+    left: -10px; /* Align to the left */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px 225px 20px 30px;
+}
+
+.data{
+    top: 5%;
+    left: 3%;
+    padding: 70px 5px 5px 5px;
+}
+
+/* Section Weather (Bottom Right) */
+.weather2 {
+    background-color: rgba(230, 70, 70, 0.7);
+    padding: 1rem;
+    color: #fff;
+    position: absolute;
+    bottom: 132px; /* Distance from the bottom of the page */
+    right: 20px; /* Align to the right */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px 40px 10px 30px;
+}
+
+.weather {
+    right: 2%;
+    top: 60%;
+    padding: 90px 5px 5px 5px;
+}
+
+.weatherp {
+    width: 50px;
+}
+
+/* General Section Styling */
+section {
+    position: absolute;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+}
+    

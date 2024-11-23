@@ -1,0 +1,82 @@
+/* Global Styles for Mobile */
+:root {
+    --bg-color: #e63232;
+    --text-color: #fff;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--accent-color);
+}
+
+main {
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Image Container for Overlay Effect */
+.image-container {
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data, .weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data ul, .weather ul {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0.5rem 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.data ul strong, .weather ul strong {
+    text-align: right;
+    font-weight: bold;
+}
+
+.data ul li, .weather ul li {
+    display: contents;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather img {
+    margin-left: 0.5rem;
+}
+
+/* Hero Image */
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0.5em 0;
+}
