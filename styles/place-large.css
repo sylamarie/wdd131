@@ -18,7 +18,7 @@ picture img {
     width: 100%; /* Smaller image width for larger screens */
     display: block;
     margin: 0 auto;
-    max-width: 100;
+    max-width: 100%;
 }
 
 /* Weather Section */
