@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BudgetBuddy - Bill Tracker to keep track of your bills and payments.">
+    <title>BudgetBuddy - Bill Tracker</title>
+    <link rel="stylesheet" href="styles/budget-buddy.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BudgetBuddy</h1>
+            <nav>
+                <ul>
+                    <li><a href="budget-buddy.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="bill-tracker">
+            <h2>Bill Tracker</h2>
+            <form id="bill-form">
+                <label for="bill-name">Bill Name:</label>
+                <input type="text" id="bill-name" placeholder="Enter bill name" required>
+
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" required>
+
+                <label for="amount">Amount Due:</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+
+                <button type="submit">Add Bill</button>
+            </form>
+            <div id="bill-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BudgetBuddy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

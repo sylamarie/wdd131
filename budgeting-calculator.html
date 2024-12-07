@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BudgetBuddy - Budgeting Calculator to manage your finances.">
+    <title>BudgetBuddy - Budgeting Calculator</title>
+    <link rel="stylesheet" href="styles/budget-buddy.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BudgetBuddy</h1>
+            <nav>
+                <ul>
+                    <li><a href="budget-buddy.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <h2>Budgeting Calculator</h2>
+            <form id="budget-form">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income" placeholder="Enter your income" required>
+
+                <label for="expenses">Monthly Expenses:</label>
+                <input type="number" id="expenses" placeholder="Enter your expenses" required>
+
+                <button type="submit">Calculate Budget</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BudgetBuddy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
