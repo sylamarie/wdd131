@@ -89,5 +89,4 @@ h1::after {
     content: "🙂"; /* The emoticon */
     margin-left: 0.5rem; /* Space between the text and emoticon */
     font-size: 1.5rem; /* Adjust the emoticon size */
-    display: none; /* Hide by default */
 }
