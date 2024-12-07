@@ -13,76 +13,79 @@
     <script defer src="scripts/form.js"></script>
 </head>
 <body>
-    <section class="form-section">
-        <h1>Product Review</h1>
-        <form id="productReviewForm" action="review.html" method="get">
+    <header>
+            <h1>Product Review</h1>
+    </header>
+    
     <main>
-            <!-- Product Name -->
-            <label for="productName">Product Name</label>
-            <select id="productName" name="productName" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
+        <!-- Product Name -->
+        <section class="form-section">
+        <form id="productReviewForm" action="review.html" method="get">
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
 
-            <!-- Overall Rating -->
-            <fieldset class="rating">
-                <legend>Overall Rating</legend>
-                <label>
-                  <span class="star">☆</span>
-                  <input type="radio" name="rating" value="1" required>
-                </label>
-                <label>
-                  <span class="star">☆☆</span>
-                  <input type="radio" name="rating" value="2">
-                </label>
-                <label>
-                  <span class="star">☆☆☆</span>
-                  <input type="radio" name="rating" value="3">
-                </label>
-                <label>
-                  <span class="star">☆☆☆☆</span>
-                  <input type="radio" name="rating" value="4">
-                </label>
-                <label>
-                  <span class="star">☆☆☆☆☆</span>
-                  <input type="radio" name="rating" value="5">
-                </label>
-              </fieldset>
+        <!-- Overall Rating -->
+        <fieldset class="rating">
+            <legend>Overall Rating</legend>
+        <label>
+            <span class="star">☆</span>
+            <input type="radio" name="rating" value="1" required>
+        </label>
+        <label>
+            <span class="star">☆☆</span>
+            <input type="radio" name="rating" value="2">
+        </label>
+        <label>
+            <span class="star">☆☆☆</span>
+            <input type="radio" name="rating" value="3">
+        </label>
+        <label>
+            <span class="star">☆☆☆☆</span>
+            <input type="radio" name="rating" value="4">
+        </label>
+        <label>
+            <span class="star">☆☆☆☆☆</span>
+            <input type="radio" name="rating" value="5">
+        </label>
+        </fieldset>
               
               
 
-            <!-- Date of Installation -->
-            <label for="installationDate">Date of Installation</label>
-            <input type="date" id="installationDate" name="installationDate" required>
+        <!-- Date of Installation -->
+        <label for="installationDate">Date of Installation</label>
+        <input type="date" id="installationDate" name="installationDate" required>
 
-            <!-- Useful Features -->
-            <fieldset class="features">
-                <legend>Which features did you find useful in the product? <span>(Check all that apply)</span></legend>
-                <label>
-                  <input type="checkbox" name="features" value="durability">
-                  Durability
-                </label>
-                <label>
-                  <input type="checkbox" name="features" value="ease-of-use">
-                  Ease of Use
-                </label>
-                <label>
-                  <input type="checkbox" name="features" value="performance">
-                  Performance
-                </label>
-                <label>
-                  <input type="checkbox" name="features" value="design">
-                  Design
-                </label>
-              </fieldset>
+        <!-- Useful Features -->
+        <fieldset class="features">
+            <legend>Which features did you find useful in the product? <span>(Check all that apply)</span></legend>
+            <label>
+                <input type="checkbox" name="features" value="durability">
+                Durability
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="ease-of-use">
+                Ease of Use
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="performance">
+                Performance
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="design">
+                Design
+            </label>
+            </fieldset>
 
-            <!-- Written Review -->
-            <label for="writtenReview"><b>Written Review</b> <i>(Optional)</i></label>
-            <textarea id="writtenReview" name="writtenReview" rows="4" placeholder="Write your review here..."></textarea>
-            <!-- User Name -->
-            <label for="userName"><b>Your Name</b> <i>(Optional)</i></label>
-            <input type="text" id="userName" name="userName" placeholder="Enter your name">
-            <!-- Submit Button -->
-            <input type="submit" value="Post Review">
+        <!-- Written Review -->
+        <label for="writtenReview"><b>Written Review</b> <i>(Optional)</i></label>
+        <textarea id="writtenReview" name="writtenReview" rows="4" placeholder="Write your review here..."></textarea>
+        <!-- User Name -->
+        <label for="userName"><b>Your Name</b> <i>(Optional)</i></label>
+        <input type="text" id="userName" name="userName" placeholder="Enter your name">
+        <!-- Submit Button -->
+        <input type="submit" value="Post Review">
         </form>
     </section>
     </main>
