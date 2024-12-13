@@ -1,0 +1,174 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for header */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Main section styling */
+main {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+#bill-tracker {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+#bill-tracker .form-container, #bill-tracker .bill-list-container {
+    width: 48%; /* Both sections will take 48% of the width */
+}
+
+/* Bill Tracker form styling */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#bill-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#bill-form input[type="text"], 
+#bill-form input[type="number"], 
+#bill-form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#bill-form button {
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bill-form button:hover {
+    background-color: #005fa3;
+}
+
+/* Bill List container styling */
+.bill-list-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#bill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bill-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.bill-item button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bill-item button:hover {
+    background-color: #cc0000;
+}
+
+.bill-item .edit-btn {
+    background-color: green;
+}
+
+.bill-item .edit-btn:hover {
+    background-color: #009900;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0078d7;
+    color: #fff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #bill-tracker {
+        flex-direction: column; /* Stack form and bill list vertically on mobile */
+    }
+
+    #bill-tracker .form-container, 
+    #bill-tracker .bill-list-container {
+        width: 100%; /* Make both containers take full width */
+    }
+}

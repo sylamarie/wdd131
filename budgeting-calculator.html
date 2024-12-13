@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BudgetBuddy - Budgeting Calculator to manage your finances.">
     <title>BudgetBuddy - Budgeting Calculator</title>
-    <link rel="stylesheet" href="styles/budget-buddy.css">
+    <link rel="stylesheet" href="styles/budget-calculator.css">
+    <script src="scripts/budget-calculator.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,18 +23,39 @@
     </header>
 
     <main>
-        <section id="calculator">
-            <h2>Budgeting Calculator</h2>
-            <form id="budget-form">
-                <label for="income">Monthly Income:</label>
-                <input type="number" id="income" placeholder="Enter your income" required>
+        <section id="calculator-section">
+            <div class="calculator-container">
+                <div id="calculator">
+                    <h2>Budgeting Calculator</h2>
+                    <form id="budget-form">
+                        <label for="income">Monthly Income:</label>
+                        <input type="number" id="income" placeholder="Enter your income" required>
 
-                <label for="expenses">Monthly Expenses:</label>
-                <input type="number" id="expenses" placeholder="Enter your expenses" required>
+                        <label>Expense Types:</label>
+                        <div id="expenses-container">
+                            <div class="expense-item">
+                                <select class="expense-type">
+                                    <option value="Rent">Rent</option>
+                                    <option value="Groceries">Groceries</option>
+                                    <option value="Utilities">Utilities</option>
+                                    <option value="Transportation">Transportation</option>
+                                    <option value="Entertainment">Entertainment</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <input type="number" class="expense-amount" placeholder="Amount" required>
+                                <button type="button" class="remove-expense">Remove</button>
+                            </div>
+                        </div>
 
-                <button type="submit">Calculate Budget</button>
-            </form>
-            <div id="result"></div>
+                        <button type="button" id="add-expense">Add Another Expense</button>
+                        <button type="submit">Calculate Budget</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="summary-container">
+                <div id="result"></div>
+            </div>
         </section>
     </main>
 
@@ -41,6 +63,5 @@
         <p>&copy; 2024 BudgetBuddy. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js" defer></script>
 </body>
 </html>

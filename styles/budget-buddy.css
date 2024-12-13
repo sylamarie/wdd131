@@ -12,6 +12,14 @@ body {
     background-color: #f4f4f9;
 }
 
+/* Container for header */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Header */
 header {
     background: #0078d7;
@@ -88,6 +96,22 @@ header nav ul li a {
     padding: 1rem;
     border-radius: 8px;
     flex-basis: 30%;
+}
+
+/* Lazy Loading: Placeholder and Transition for Images */
+.feature-card img {
+    width: 100%;
+    height: auto;
+    background: url('placeholder-image.jpg') center center no-repeat; /* Set a placeholder background */
+    background-size: cover;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+    padding-top: 20px;
+}
+
+/* When the image is loaded, fade it in */
+.feature-card img.loaded {
+    opacity: 1;
 }
 
 .feature-card h4 {

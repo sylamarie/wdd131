@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BudgetBuddy - Bill Tracker to keep track of your bills and payments.">
-    <title>BudgetBuddy - Bill Tracker</title>
-    <link rel="stylesheet" href="styles/budget-buddy.css">
+    <meta name="description" content="Bill Tracker - Track and manage your bills.">
+    <title>Bill Tracker - Manage Your Bills</title>
+    <link rel="stylesheet" href="styles/bill-tracker.css">
+    <script src="scripts/bill-tracker.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,27 +24,33 @@
 
     <main>
         <section id="bill-tracker">
-            <h2>Bill Tracker</h2>
-            <form id="bill-form">
-                <label for="bill-name">Bill Name:</label>
-                <input type="text" id="bill-name" placeholder="Enter bill name" required>
-
-                <label for="due-date">Due Date:</label>
-                <input type="date" id="due-date" required>
-
-                <label for="amount">Amount Due:</label>
-                <input type="number" id="amount" placeholder="Enter amount" required>
-
-                <button type="submit">Add Bill</button>
-            </form>
-            <div id="bill-list"></div>
+            <div class="form-container">
+                <h2>Track Your Bills</h2>
+                <form id="bill-form">
+                    <label for="bill-name">Bill Name:</label>
+                    <input type="text" id="bill-name" placeholder="Enter bill name" required>
+    
+                    <label for="bill-amount">Amount:</label>
+                    <input type="number" id="bill-amount" placeholder="Enter bill amount" required>
+    
+                    <label for="bill-due-date">Due Date:</label>
+                    <input type="date" id="bill-due-date" required>
+    
+                    <button type="submit">Add Bill</button>
+                </form>
+            </div>
+    
+            <div class="bill-list-container">
+                <h3>Your Bills</h3>
+                <ul id="bill-list"></ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 BudgetBuddy. All Rights Reserved.</p>
+        <p>&copy; 2024 Bill Tracker. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js" defer></script>
+    
 </body>
 </html>
